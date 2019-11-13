@@ -3,15 +3,18 @@ package CH9extends;
 
 public class A9 {
     public static void main(String[] args) {
-        CCircle c1 = new CCircle(2.8);
-        c1.show();
+//        CCircle c1 = new CCircle(2.8);
+//        c1.show();
+//
+//        CCoin c2 = new CCoin();
+//        c2.show();
+//        c2.setValue(888);
+//
+//        CCircle c3 = new CCircle(2.9);
+//        c3.toString();
 
-        CCoin c2 = new CCoin();
-        c2.show();
-        c2.setValue(888);
-
-        CCircle c3 = new CCircle(2.9);
-        c3.toString();
+        CCircle c4 = new CCoin();
+        ((CCoin) c4).setValue(20);
     }
 }
 
