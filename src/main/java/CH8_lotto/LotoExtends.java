@@ -1,5 +1,7 @@
 package CH8_lotto;
 
+import CH9extends.ComputeUpDown;
+
 import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
@@ -43,7 +45,7 @@ public class LotoExtends extends Loto {
     @Override
     public int userInput() throws IOException {
 //        return super.userInput();
-        System.out.print("1. 終極密碼 2. 自選樂透 3.隨機樂透 ");
+        System.out.print("1. 終極密碼 2. 自選樂透 3.隨機樂透 4.四則運算");
         String s=br.readLine();
         int usr=Integer.parseInt(s);
         return usr;
@@ -61,6 +63,9 @@ public class LotoExtends extends Loto {
                 break;
             case 3:
                 randomLoto();
+                break;
+            case 4:
+                new ComputeUpDown(10).playUD();
                 break;
             default:
                 System.out.println("很抱歉無此選項...");
